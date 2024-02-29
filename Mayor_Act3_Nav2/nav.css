@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, sans-serif;
+    background-color: orangered;
+}
+nav {
+    background-color: white; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 10px 20px;
+}
+nav {
+    background-color: #444; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666; 
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #ccc; 
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+}
+
+nav a:first-child {
+    margin-left: 0;
+}
+
+nav a:last-child {
+    margin-right: 0; 
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: orange; 
+    color: black; 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item-with-submenu {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.nav-item-with-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    padding: 10px 20px;
+    display: block;
+    color: black; 
+    transition: color 0.3s ease; 
+}
+
+.submenu a:hover,
+.submenu a:focus {
+    color: white; 
+    background-color: #444;
+}
+
+.sub-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #444;
+}
+
+.submenu:hover .sub-submenu {
+    display: block;
+}
+
+.sub-submenu a {
+    padding: 10px 20px;
+    display: block;
+    color: black; 
+    transition: color 0.3s ease; 
+}
+
+.sub-submenu a:hover,
+.sub-submenu a:focus {
+    color: white;
+    background-color: #444;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 0;
+}
